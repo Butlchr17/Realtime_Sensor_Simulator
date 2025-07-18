@@ -11,15 +11,17 @@ class SensorSimulator {
         double altitude;
         double velocity;
         double acceleration;
-        std::vector<double> datalog;
+        std::vector<std::pair<std::chrono::system_clock::time_point, double>> dataLog;
 
     public:
+    
+        SensorSimulator();
 
         void update(double deltaTime);
         double getAltitude() const;
         bool isThresholdExceeded(double threshold) const;
         void logData(const std::string& filename) const;
-        void setAltitude(double acc);
+        void setAcceleration(double acc);
 
 };
 

@@ -3,6 +3,7 @@
 #include <thread>
 #include <fstream>
 #include <vector>
+#include <ctime>
 #include "SensorSimulator.h"
 
 int main() {

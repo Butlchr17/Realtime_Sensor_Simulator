@@ -2,13 +2,14 @@
 #include <fstream>
 #include <iomanip>
 #include <stdexcept>
+#include <ctime>
 
 SensorSimulator::SensorSimulator() : altitude(0.0), velocity(0.0), acceleration(9.8) {}
 
 void SensorSimulator::update(double deltaTime) {
     velocity += acceleration * deltaTime;
     altitude += velocity * deltaTime;
-    datalog.push_back({std::chrono::system_clock::now(), altitude});
+    dataLog.push_back({std::chrono::system_clock::now(), altitude});
 }
 
 double SensorSimulator::getAltitude() const {
