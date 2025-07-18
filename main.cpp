@@ -29,7 +29,7 @@ int main() {
             std::cout << "Alert: Altitude exceeded 1000m! Current: " << simulator.getAltitude() << std::endl;
         }
 
-        std::this_thread::sleep_until(start + std::chrono::miliseconds(100 * (i + 1)));
+        std::this_thread::sleep_until(start + std::chrono::milliseconds(100 * (i + 1)));
     }
 
     try {
