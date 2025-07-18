@@ -33,7 +33,7 @@ int main() {
     }
 
     try {
-        simulator.logData("sensor_log.txt");
+        simulator.logData("output/sensor_log.txt");
         std::cout << "Data logged successfully." << std::endl;
     }
 
