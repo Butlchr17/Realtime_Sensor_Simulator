@@ -1,6 +1,6 @@
 # Realtime_Sensor_Simulator
 
-A console-based C++ application that simulates sensor data (such as altitude and acceleration for a rocket) in real-time, processes it with basic thresholding logic, and logs outputs. This project mimics embedded systems monitoring, similar to those used in aerospace applications at companies like SpaceX. It uses standard C++ libraries for timing, threading, and file I/O, making it lightweight and educational for building skills in systems programming, real-time simulation, and data handling.
+A console-based C++ application that simulates sensor data (such as altitude and acceleration for a rocket) in real-time, processes it with basic thresholding logic, and logs outputs. This project mimics embedded systems monitoring, similar to an extremely simplified version of those used in aerospace applications at companies like SpaceX. It uses standard C++ libraries for timing, threading, and file I/O, making it lightweight and educational for building skills in systems programming, real-time simulation, and data handling.
 
 The simulation runs for approximately 5 seconds, updating sensor values every 100ms with added random noise for realism. It checks if altitude exceeds a 1000m threshold (triggering an alert) and logs timestamped data to a file.
 
